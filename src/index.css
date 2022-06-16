@@ -36,7 +36,7 @@ ol, ul {
   outline: none;
 }
 
-.kbs-navigation .square:focus {
+.kbd-navigation .square:focus {
   background: #ddd;
 }
 

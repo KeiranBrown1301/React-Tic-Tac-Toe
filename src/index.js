@@ -1,6 +1,6 @@
-import React from "react";
-import ReactDOM from 'react-dom/client';
-import '.index.css';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
 
 class Square extends React.Component {
   render() {
@@ -8,17 +8,17 @@ class Square extends React.Component {
       <button className="square">
         {/* TODO */}
       </button>
-    )
+    );
   }
 }
 
 class Board extends React.Component {
   renderSquare(i) {
-    return <Square />
+    return <Square />;
   }
 
   render() {
-    const status = 'Next plater: X';
+    const status = 'Next player: X';
 
     return (
       <div>
@@ -51,7 +51,7 @@ class Game extends React.Component {
           <Board />
         </div>
         <div className="game-info">
-          <div>{/* Status */}</div>
+          <div>{/* status */}</div>
           <ol>{/* TODO */}</ol>
         </div>
       </div>
@@ -59,5 +59,7 @@ class Game extends React.Component {
   }
 }
 
+// ========================================
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Game />)
+root.render(<Game />);
